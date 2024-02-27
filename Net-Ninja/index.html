@@ -9,15 +9,15 @@
 <body>
     <h1>New User Signup</h1>
     <form >
-        <input type="text" name="username"  placeholder="username">
+        <input type="text" name="username"  placeholder="username"maxlength="12">
         <p>Username must be and contain 5-12 characters</p>
         <input type="text" name="email" placeholder="email">
         <p>Email must be a valid address, e.g. me@mydomain.com</p>
-        <input type="password" name="password" placeholder="password">
+        <input type="password" name="password" placeholder="password" maxlength="20">
         <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
-        <input type="text" name="telephone" placeholder="telephone">
+        <input type="text" name="telephone" placeholder="telephone" maxlength="11">
         <p>Telephone must be a valid UK telephone number (11 digits)</p>
-        <input type="text" name="slug" placeholder="profile slug">
+        <input type="text" name="slug" placeholder="profile slug" maxlength="20">
         <p>Slug must contain only lowercase letters, numbers and hyphens and be 8 - 20 characters</p>
     </form>
 </body>
