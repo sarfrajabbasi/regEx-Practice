@@ -21,11 +21,11 @@ const inputs = document.querySelectorAll("input");
 function validate(field,regEx){
     if(regEx.test(field.value)){
         field.className = "valid"
-        console.log(field.className);
+        // console.log(field.className);
         
     }else{
         field.className = "invalid"
-        console.log(field.className);
+        // console.log(field.className);
 
     }
     
