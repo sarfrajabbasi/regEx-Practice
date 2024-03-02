@@ -1,12 +1,13 @@
-
 // \d -->  0-9
 const pattern2 = {
-    phoneNumber:/^\(?(\d\d\d)[-.)](\d\d\d)[-.](\d\d\d\d)$/ || /^\(?\d{3}[-.)](\d{3})[-.]\d{4}$/,
-}
+  phoneNumber:
+    /^\(?(\d\d\d)[-.)](\d\d\d)[-.](\d\d\d\d)$/ ||
+    /^\(?\d{3}[-.)](\d{3})[-.]\d{4}$/,
+};
 
-console.log(pattern2.phoneNumber.exec('(123)756-7865'));
-console.log(pattern2.phoneNumber.exec('123-756-7865'));
-console.log(pattern2.phoneNumber.exec('123.756.7865'));
+console.log(pattern2.phoneNumber.exec("(123)756-7865"));
+console.log(pattern2.phoneNumber.exec("123-756-7865"));
+console.log(pattern2.phoneNumber.exec("123.756.7865"));
 
 // helllo call me 879-678-3454
 // sarfraj.123asas@gmail.com
@@ -30,8 +31,6 @@ sub gp --> $2
 <a href="'https://www.Hello.com'">illHello</a>sdsa
 <a href="'https://www.kill.com'">ill</a>asds */
 
-
-
 // (\w+)\s\1
 
 // rainbow rainbow me with me
@@ -39,3 +38,15 @@ sub gp --> $2
 // not not
 // i i
 // is some is is s some words some
+
+var r = /^\d{3}$/;
+var pattern = {
+    matchMe:/\b[a-z]+\b/gi
+}
+
+console.log(r.test("123"));
+
+var s = "Me and My Problems With Logics and data structred";
+
+const result = s.match(pattern.matchMe)
+console.log(result);
