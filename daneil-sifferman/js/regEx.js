@@ -41,12 +41,17 @@ sub gp --> $2
 
 var r = /^\d{3}$/;
 var pattern = {
-    matchMe:/\b[a-z]+\b/gi
+    matchMe:/\b[a-z]+\b/gi,
+    matchPhone:/(\d{3})[-.]\d{4}/
 }
 
 console.log(r.test("123"));
 
 var s = "Me and My Problems With Logics and data structred";
+var p = "123-1234 and 345-4444 and 567-7777";
 
 const result = s.match(pattern.matchMe)
+const result2 = p.match(pattern.matchPhone);
+
 console.log(result);
+console.log(result2);
